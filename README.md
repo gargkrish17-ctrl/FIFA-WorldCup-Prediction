@@ -1,6 +1,6 @@
 
 # FIFA World Cup 2026 Prediction
-This project developed machine learning models to predict FIFA World Cup match outcomes using historical tournament data and FIFA team rankings. Among all models tested, the tuned Random Forest Classifier achieved the best performance and was selected as the final prediction model.
+This project developed machine learning models to predict FIFA World Cup match outcomes using historical tournament data and FIFA team rankings. Among all models tested, the tuned Random Forest Classifier achieved the best performance (59% accuracy) and was selected as the final prediction model.
 
 Feature engineering played an important role in model performance. Goal_Avg_Diff provided a slight improvement for Logistic Regression but reduced the performance of Random Forest, suggesting that its usefulness depends on the learning algorithm. Experience_Diff consistently reduced model accuracy and was therefore excluded from the final feature set.
 
