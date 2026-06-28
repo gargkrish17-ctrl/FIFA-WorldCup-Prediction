@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 
 schedule = pd.read_csv("schedule_2026.csv")
-prob = pd.read_csv("prob.csv")
 nb_prob = pd.read_csv("NB_probability.csv")
 rf_prob = pd.read_csv("RF_probability.csv")
 matches = []
