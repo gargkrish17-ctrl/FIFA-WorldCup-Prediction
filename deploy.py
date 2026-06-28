@@ -4,6 +4,7 @@ import pandas as pd
 schedule = pd.read_csv("schedule_2026.csv")
 nb_prob = pd.read_csv("NB_probability.csv")
 rf_prob = pd.read_csv("RF_probability.csv")
+goal_pred = pd.read_csv("goal_pred.csv")
 matches = []
 for i,row in schedule.iterrows():
     match = str(row["Date"]) + "  ->  " + row["home_team"] + " vs " + row["away_team"]
@@ -94,3 +95,4 @@ if match_data != "NONE":
             st.write("AWAY WIN % : ",rf_prob.iloc[match_index]["Away Win %"])
             st.write("DRAW % : ",rf_prob.iloc[match_index]["Draw %"])
 
+        st.write("GOALS:", goal_pred.iloc[match_index,0])
