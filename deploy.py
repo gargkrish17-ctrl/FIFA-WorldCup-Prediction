@@ -95,4 +95,4 @@ if match_data != "NONE":
             st.write("AWAY WIN % : ",rf_prob.iloc[match_index]["Away Win %"])
             st.write("DRAW % : ",rf_prob.iloc[match_index]["Draw %"])
 
-        st.write("GOALS:", goal_pred.iloc[match_index,0])
+        st.write("TOTAL GOALS:", goal_pred.iloc[match_index,0])
